@@ -1,0 +1,111 @@
+:root {
+    --bg1-color: #fff;
+    --bg2-color:#EEEEEE;
+    --text-color: #272829;
+    --main-color: #173b6c;
+    --secondary-color:#149ddd;
+    --secondary-color-hover:#67b7dc;
+    --border-color:#1f5297;
+    --text-area:#fff;
+    --pg-color: #1f242d;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: var(--text-color);
+    background: var(--bg2-color);
+    text-align:center;
+    font-size: 16px;
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+  
+a:hover {
+    color: var(--secondary-color-hover);
+    text-decoration: none;
+}
+  
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", sans-serif;
+}
+
+h1, h2 {
+    font-size: 32px;
+    font-weight: bold;
+    position: relative;
+    color: var(--main-color);
+    text-transform: capitalize;
+}
+  
+p {
+    margin-bottom: 0;
+    color: var(--text-color);
+}
+
+.container{
+    text-align: center;
+    padding: 0 20px;
+}
+
+.btn1, .btn2{
+    background-color: var(--secondary-color);
+    color: var(--bg1-color);
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    border: none;
+    outline: none; 
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+}
+.btn1{
+    border-top-left-radius: 80px 15px;
+}
+.btn2{
+    border-top-right-radius: 80px 15px;
+}
+.btn1:hover, .btn2:hover{
+    background: var(--secondary-color-hover);
+    color: var(--text-color);
+}
+    
+#map {
+    width: 600px; 
+    height: 400px;
+    margin: 20px auto;
+}
+
+@media screen and (max-width: 768px) {
+    h1,
+    h2 {
+        font-size: 28px;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    #map {
+        width: 90%;
+        height: 300px;
+        margin: 20px auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1,
+    h2 {
+        font-size: 24px;
+    }
+
+    .btn1,
+    .btn2 {
+        width: 80px;
+        height: 30px;
+        font-size: 16px;
+    }
+}
